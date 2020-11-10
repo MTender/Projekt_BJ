@@ -1,0 +1,22 @@
+.content {
+	padding-top: 15px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 80px;
+	color: white;
+}
+.content p{
+	font-size: 20pt;
+}
+.content h1{
+	padding-top: 10px;
+	font-size: 30pt;
+	font-weight: bold; 
+}
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap{
+    padding-bottom: 80px;    
+}

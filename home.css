@@ -1,0 +1,63 @@
+.content {
+	padding-top: 20px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 80px;
+	color: white;
+}
+.content p{
+	font-size: 20pt;
+}
+.content h1{
+	font-size: 45pt;
+	font-weight: bold; 
+}
+
+/* pilt ja tekst*/
+.background img{
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+}
+.img_txt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+}
+.img_txt p{
+    color: white;
+    font-size: 50pt;
+    font-weight: 700;
+    text-align: center;
+}
+/*suuruse muutmine vastavalt ekraani suurusele*/
+@media only screen and (max-width:1700px){
+    .background img{
+        height: 600px;
+    }
+}
+@media only screen and (min-width:1700px){
+    .background img{
+        height: 900px;
+    }
+    .img_txt p{
+        font-size: 70pt;
+    }
+}
+/* mobiilimenüü muutmine */
+@media only screen and (max-width:766px){
+    .background img{
+        height: 500px;
+    }
+    .img_txt p{
+        font-size: 30pt;
+    }
+        
+}
+
+/* sisu tekst*/
+.content a{
+	color: white;
+}
