@@ -7,3 +7,5 @@ Rühm BJ
 Oliver Savolainen
 Kaur Vali
 Märt Tender
+
+Kavatseme luua kodulehe firmale, mis tänu asutajate koodile broneerib maanteeameti veebilehelt B-kategooria sõidueksamite esimesi saadavalolevaid aegu ning seejärel müüb neid kodulehel ja Facebooki grupis ‘ARK-eksamite ajad üle Eesti (MÜÜK/VAHETUS)’ klientidele edasi.
