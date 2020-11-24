@@ -24,6 +24,11 @@ body{
 	font-size: 30pt;
 	font-weight: bold; 
 }
+.content h2{
+	padding-top: 10px;
+	font-size: 20pt;
+	font-weight: bold; 
+}
 .page-container{
     position: relative;
     min-height: 100vh;
@@ -73,8 +78,12 @@ body{
     color: white;
     text-decoration: none;
 }
-.logo img{
+.head_logo{
     height: 70px;
+}
+.sub_logo{
+	height: 150px;
+	padding-top: 25px;
 }
 
 /* SISU */

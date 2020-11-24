@@ -3,17 +3,3 @@ table, th, td {
 	border: 1px solid white;
 	padding: 5px;
 }
-.page-container{
-    position: relative;
-    min-height: 100vh;
-}
-.content-wrap{
-    padding-bottom: 80px;    
-}
-.content .sub_logo{
-	height: 150px;
-	padding-top: 25px;
-}
-.content img{
-	height: 150px;
-}
