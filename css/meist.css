@@ -1,16 +1,6 @@
-.content {
-	padding-top: 15px;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 80px;
-	color: white;
-}
-.content p{
-	font-size: 15pt;
-}
-.content h1{
+.content h2{
 	padding-top: 10px;
-	font-size: 30pt;
+	font-size: 20pt;
 	font-weight: bold; 
 }
 .page-container{

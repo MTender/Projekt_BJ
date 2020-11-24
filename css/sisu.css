@@ -1,18 +1,3 @@
-.content {
-	padding-top: 15px;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 80px;
-	color: white;
-}
-.content p{
-	font-size: 15pt;
-}
-.content h1{
-	padding-top: 10px;
-	font-size: 30pt;
-	font-weight: bold; 
-}
 table, th, td {
 	border-collapse: collapse;
 	border: 1px solid white;
