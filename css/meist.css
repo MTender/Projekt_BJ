@@ -1,3 +1,30 @@
 .content img{
 	height: 150px;
 }
+/*suuruse muutmine vastavalt ekraani suurusele*/
+@media only screen and (max-width:1800px){
+	.right{
+		display: none;
+	}
+}
+@media only screen and (min-width:1801px){
+    .split{
+		width: 50%;
+	}
+	.left{
+		vertical-align: text-top;
+	}
+	.right{
+		text-align: center;
+	}
+	.under{
+		display: none;
+	}
+}
+
+/* mobiilimenüü muutmine */
+@media only screen and (max-width:800px){
+    .under,.right{
+        display: none;
+    }
+}
