@@ -10,7 +10,10 @@ table, th, td {
 .content-wrap{
     padding-bottom: 80px;    
 }
-.content img{
+.content .sub_logo{
 	height: 150px;
 	padding-top: 25px;
+}
+.content img{
+	height: 150px;
 }
