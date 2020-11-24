@@ -73,6 +73,10 @@ body{
     color: white;
     text-decoration: none;
 }
+#lowLogo{
+    height: 200px;
+    width: 200px;
+}
 
 /* SISU */
 .sisu{

@@ -1,0 +1,9 @@
+.content h2{
+	padding-top: 10px;
+	font-size: 30pt;
+	font-weight: bold; 
+}
+.content img{
+    height: 150px;
+    width: 150px;
+}
