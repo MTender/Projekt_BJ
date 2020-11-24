@@ -26,3 +26,7 @@
 .content-wrap{
     padding-bottom: 80px;    
 }
+.content img{
+	height: 150px;
+	padding-top: 25px;
+}
