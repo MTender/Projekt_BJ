@@ -19,12 +19,12 @@
 }
 
 /*suuruse muutmine vastavalt ekraani suurusele*/
-@media only screen and (max-width:1700px){
+@media only screen and (max-width:1999px){
     .background img{
-        height: 600px;
+        height: 670px;
     }
 }
-@media only screen and (min-width:1700px){
+@media only screen and (min-width:2000px){
     .background img{
         height: 900px;
     }
@@ -39,7 +39,7 @@
         height: 500px;
     }
     .img_txt p{
-        font-size: 30pt;
+        font-size: 25pt;
     }
         
 }

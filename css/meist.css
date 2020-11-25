@@ -1,9 +1,31 @@
-.content h2{
-	padding-top: 10px;
-	font-size: 20pt;
-	font-weight: bold; 
-}
 .content img{
-    height: 150px;
-    width: 150px;
+	height: 150px;
+}
+/*suuruse muutmine vastavalt ekraani suurusele*/
+@media only screen and (max-width:1800px){
+	.left .sub_logo{
+		display: none;
+	}
+}
+@media only screen and (min-width:1801px){
+    .split{
+		display: flex;
+	}
+	.left, .right{
+		flex: 50%;
+		vertical-align: text-top;
+	}
+	.right{
+		text-align: center;
+	}
+	.right .sub_logo{
+		display: none;
+	}
+}
+
+/* mobiilimenüü muutmine */
+@media only screen and (max-width:800px){
+    .right{
+        display: none;
+    }
 }
