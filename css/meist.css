@@ -1,7 +1,9 @@
+/* eksami mängu piltide suurus */
 .content img{
 	height: 150px;
 }
-/*suuruse muutmine vastavalt ekraani suurusele*/
+
+/* lehe pooleks jagamine piisavalt suure ekraani puhul */
 @media only screen and (max-width:1800px){
 	.left .sub_logo{
 		display: none;
@@ -22,8 +24,6 @@
 		display: none;
 	}
 }
-
-/* mobiilimenüü muutmine */
 @media only screen and (max-width:800px){
     .right{
         display: none;

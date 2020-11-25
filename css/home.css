@@ -1,4 +1,4 @@
-/* pilt ja tekst*/
+/* taustapilt ja tekst */
 .background img{
     width: 100%;
     object-fit: cover;
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-/*suuruse muutmine vastavalt ekraani suurusele*/
+/* taustapildi ja teksti suuruse muutmine vastavalt ekraani suurusele */
 @media only screen and (max-width:1999px){
     .background img{
         height: 670px;
@@ -32,14 +32,11 @@
         font-size: 70pt;
     }
 }
-
-/* mobiilimenüü muutmine */
 @media only screen and (max-width:766px){
     .background img{
         height: 500px;
     }
     .img_txt p{
         font-size: 25pt;
-    }
-        
+    }  
 }
