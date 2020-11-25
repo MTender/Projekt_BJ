@@ -1,19 +1,21 @@
+//defineerime muutujad ja algväärtustame
 carX = 1;
 carY = 1;
 cyclistX = 4;
 cyclistY = 1;
 minutes = 0;
 carMoves = true;
-cyclistMoves=false;
+cyclistMoves = false;
 
-function cyclist(){
-    if(cyclistX==4 && cyclistY==4){
+function cyclist(){ //jalgratturi liikumise funktsioon
+    if(cyclistX==4 && cyclistY==4){ //vaatab kust jalgrattur käesoleval hetkel liikumist alustab ja sellest lähtuvalt valib, milline pilt temast pärast liikumist maha peaks jääma
         document.getElementById("a"+cyclistX+cyclistY).src = "../images/ark.jpg";
     }else{
         document.getElementById("a"+cyclistX+cyclistY).src = "../images/road.jpg";
     }
     
-    if(carMoves==true){
+    if(carMoves==true){ //kui eksamiauto (mängija) on alustanud liikumist
+        //pseudo-suvalise liikumissuuna valimine
         if(Math.random()<0.5){
             if(cyclistX==1){
                 cyclistX++;
@@ -36,22 +38,23 @@ function cyclist(){
             }
         }
     }
-    if(cyclistX==carX && cyclistY==carY){
-        carMoves = false;
-        window.clearInterval(cyclistMoves);
-        cyclistMoves = false;
-        document.getElementById("a"+cyclistX+cyclistY).src = "../images/crash.png";
-        document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile ette. Oled eksami läbi kukkunud.";
+    if(cyclistX==carX && cyclistY==carY){ //kui pärast liikumist sattus jalgrattur samale ruudule kus asus eksamiauto
+        carMoves = false; //auto ei saa liikuda
+        window.clearInterval(cyclistMoves); //lõpeta millisekundite lugemine jalgratturi liikumiste vahel (lõpeta taimeri töö)
+        cyclistMoves = false; //jalgrattur ei saa liikuda
+        document.getElementById("a"+cyclistX+cyclistY).src = "../images/crash.png"; //paneb kokkupõrkeruutu avarii pildi
+        document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile ette. Oled eksami läbi kukkunud."; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
     }else{
-        document.getElementById("a"+cyclistX+cyclistY).src = "../images/cyclist.jpg";
+        document.getElementById("a"+cyclistX+cyclistY).src = "../images/cyclist.jpg"; //paneb ruudule kuhu jalgrattur just liikus jalgratturi pildi
     }
 }
 
-function liigu(x, y){
-    if(carX==x && carY==y && carMoves==true){
-        if(!cyclistMoves){
-            cyclistMoves = window.setInterval(cyclist, 1000);
+function liigu(x, y){ //eksamiauto liikumise funktsioon (x ja y on selle ruudu koordinaadid, millele mängija vajutas)
+    if(carX==x && carY==y && carMoves==true){ //kui mängija vajutas ruudule, kus asub auto, ja auto saab liikuda
+        if(!cyclistMoves){ //kui taimerit pole veel käivitatud
+            cyclistMoves = window.setInterval(cyclist, 1000); //käivitab taimeri, mis kutsub iga 1000 millisekundi (1 sekundi) tagant välja jalgratturi liikumise funktsiooni, ning omastab muutujale väärtuseks taimeri ID
         }
+        //pseudo-suvalise liikumissuuna valimine
         if(Math.random()<0.5){
             if(carX==1){
                 carX++;
@@ -74,31 +77,34 @@ function liigu(x, y){
             }
         }
         
-        minutes++;
+        minutes++; //minutite (eksamiauto liikumiskordade) lugemine
         
-        document.getElementById("gameInfo")
-        if(minutes == 1){
+        if(minutes == 1){ //annab mängijale teada, mitu korda ta on liikunud (õiges käändes)
             document.getElementById("gameInfo").innerHTML = "Sõit on kestnud " + minutes + " minut.";
         }else{
             document.getElementById("gameInfo").innerHTML = "Sõit on kestnud " + minutes + " minutit.";
         }
-        document.getElementById("a"+x+y).src = "../images/road.jpg";
-        document.getElementById("a"+carX+carY).src = "../images/car.jpg";
+        document.getElementById("a"+x+y).src = "../images/road.jpg"; //asendab ruudus, kus auto just asus (mille peale just vajutati), pildi teega 
+        document.getElementById("a"+carX+carY).src = "../images/car.jpg"; //asendab ruudus, kuhu auto just liikus, pildi autoga
         
-        if(carX==cyclistX && carY==cyclistY){
-            carMoves = false;
-            window.clearInterval(cyclistMoves);
-            cyclistMoves = false;
-            document.getElementById("a"+cyclistX+cyclistY).src = "../images/crash.png";
-            document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile otsa. Oled eksami läbi kukkunud.";
+        if(carX==cyclistX && carY==cyclistY){ //kui pärast liikumist sattus eksamiauto samale ruudule, kus asus jalgrattur
+            carMoves = false; //auto ei saa liikuda
+            window.clearInterval(cyclistMoves); //lõpeta taimeri töö
+            cyclistMoves = false; //jalgrattur ei saa liikuda
+            document.getElementById("a"+cyclistX+cyclistY).src = "../images/crash.png"; //paneb kokkupõrkeruutu avarii pildi
+            document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile otsa. Oled eksami läbi kukkunud."; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
         }
         
-        if(carX==4 && carY==4){
-            carMoves = false;
-            window.clearInterval(cyclistMoves);
-            cyclistMoves = false;
-            document.getElementById("a44").src = "../images/licence.png";
-            document.getElementById("gameInfo").innerHTML = "Jõudsid Maanteeametisse " + minutes + " minutiga. Eksam edukalt sooritatud!";
+        if(carX==4 && carY==4){ //kui eksamiauto jõudis alla paremasse nurka (Maanteeametisse)
+            carMoves = false; //auto ei saa liikuda
+            window.clearInterval(cyclistMoves); //lõpeta taimeri töö
+            cyclistMoves = false; //jalgrattur ei saa liikuda
+            document.getElementById("a44").src = "../images/licence.png"; //paneb alla paremasse ruutu juhiloa pildi
+            document.getElementById("gameInfo").innerHTML = "Jõudsid Maanteeametisse " + minutes + " minutiga. Eksam edukalt sooritatud!"; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
         }
     }
 }
+
+//kood on võetud keskkoolis loodud tunnitööst (ehk nullist ise tehtud)
+//Märt Tender - r01bf195.11a.risk.ee/Kirbumang
+//Kaur Vali - r01bf196.11a.risk.ee/Kirbumang
