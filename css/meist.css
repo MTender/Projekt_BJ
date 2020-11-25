@@ -3,28 +3,29 @@
 }
 /*suuruse muutmine vastavalt ekraani suurusele*/
 @media only screen and (max-width:1800px){
-	.right{
+	.left .sub_logo{
 		display: none;
 	}
 }
 @media only screen and (min-width:1801px){
     .split{
-		width: 50%;
+		display: flex;
 	}
-	.left{
+	.left, .right{
+		flex: 50%;
 		vertical-align: text-top;
 	}
 	.right{
 		text-align: center;
 	}
-	.under{
+	.right .sub_logo{
 		display: none;
 	}
 }
 
 /* mobiilimenüü muutmine */
 @media only screen and (max-width:800px){
-    .under,.right{
+    .right{
         display: none;
     }
 }
