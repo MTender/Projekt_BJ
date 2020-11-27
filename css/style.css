@@ -9,12 +9,12 @@ body{
     position: relative;
 }
 
-/* kõigi lehtede sisu */
+/* kõigi lehtede sisu basic kujundus */
 .content {
 	padding-top: 15px;
 	padding-left: 10vw;
 	padding-right: 10vw;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	color: white;
 }
 .content p{
@@ -97,6 +97,26 @@ body{
 }
 .content-wrap{
     padding-bottom: 80px;    
+}
+
+/* pealkiri ja mid-banner */
+.mid-banner img{
+	width: 100%;
+	height: 100px;
+    object-fit: cover;
+	position: relative;
+}
+.mid_img_txt{
+	position: absolute;
+	text-align: center;
+	left: 10%;
+	right: 90%;
+	padding-top: 20px;
+	color: white;
+    font-size: 35pt;
+    font-weight: 700;
+	text-align: center;
+	z-index: 1;
 }
 
 

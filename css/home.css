@@ -17,6 +17,9 @@
     font-weight: 700;
     text-align: center;
 }
+.content p{
+    font-size: 20pt;
+}
 
 /* taustapildi ja teksti suuruse muutmine vastavalt ekraani suurusele */
 @media only screen and (max-width:1999px){
@@ -38,5 +41,5 @@
     }
     .img_txt p{
         font-size: 25pt;
-    }  
+    }
 }

@@ -1,3 +1,8 @@
+/*mid banneri asukoht*/
+.mid-banner img{
+	object-position: 40% 60%;
+}
+
 /* hinnatabel */
 table, th, td {
 	border-collapse: collapse;
