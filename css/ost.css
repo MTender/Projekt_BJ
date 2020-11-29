@@ -1,85 +1,79 @@
-.row {
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-  margin: 0 -16px;
+.makse, .aasta{
+	float: right;
+	display: inline-block;
+	width: 45%;
 }
-
-.col-25 {
-  -ms-flex: 25%; 
-  flex: 25%;
+.tellija, .kuu{
+	float: left;
+	display: inline-block;
+	width: 45%;
 }
-
-.col-50 {
-  -ms-flex: 50%; 
-  flex: 50%;
+.aasta, .kuu{
+	margin-bottom: 20px;
 }
-
-.col-75 {
-  -ms-flex: 75%; 
-  flex: 75%;
+.nupp input{
+	width: 100%
 }
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
+.container{
+	width: 100%;
+	color: white; 
 }
-
-.container {
-  padding: 0px 50px 50px 100px;
-  color: white;
-  
-}
-
 input[type=text] {
-  width: 80%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px 0px 12px 0px;
+	border: 1px solid white;
+	border-radius: 3px;
 }
-
 label {
-  margin-bottom: 10px;
-  display: block;
+	margin-bottom: 10px;
+	display: block;
 }
-
 .icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  background-color: white;
-  width: 30%;
-  border-radius: 3px;
-}
+	margin-bottom: 20px;
+	padding: 7px 0;
+	background-color: white;
+	width: auto;
+	border-radius: 3px;
 
+}
+.icon-container img{
+	height: 40px;
+	width: 60px;
+    object-fit: contain;
+	position: relative;
+}
 .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  margin-bottom: 60px;
-  border: none;
-  width: 80%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
+	background-color:#ff1d74;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	margin-bottom: 60px;
+	border: none;
+	width: 80%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
 }
-
 .btn:hover {
-  background-color: #45a049;
-}
-
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
+	background-color: #6d46c7;
 }
 .custom.select{
 	position: relative;
 	border-radius: 3px;
-	width: 800px;
-	
+	width: 800px;	
 }
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+	padding: 12px;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	padding: 12px;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	padding: 12px;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	padding: 12px;
+  }
 	
