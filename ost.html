@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bravuurikad Juhid - Ostuvorm</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ost.css">
+    <script src="js/loading.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="overlay">
+            <div class="loader"></div>
+        </div>
+        <div class="content-wrap">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" class="head_logo" alt="logo"></a> 
+                </div>
+                <div class="index">
+                    <ul>
+                        <li><a href="sisu.html">Premium</a></li>
+                        <li><a href="meist.html">Meist</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sisu">
+                <div class="mid-banner">
+                    <p class=mid_img_txt>Ostuvorm</p>
+                    <img src="images/mid-banner4.jpg" alt="backdrop">
+                </div>
+                <div class="content">
+					<p>Siin on sul väikese rahasumma eest kindlustada sõidueksami aegade stressist vaba elu täpselt nii kauaks kuni tahad!</p>
+					<br>
+                    <img src="images/logo.png" class="sub_logo" alt="logo">
+                </div>
+					<div class="custom-select" style="width:200px;">
+					<select name="paketid" id="paketid">
+						<option value="vali">Vali pakett: </option>
+						<option value="12BP">12 kuud Bravuurikas Premium</option>
+						<option value="12P">12 kuud Premium</option>
+						<option value="1BP">1 kuu Bravuurikas Premium</option>
+						<option value="1P">1 kuu Premium</option>
+						<option value="1NBP">1 nädal Bravuurikas Premium</option>
+						<option value="1NP">1 nädal Premium</option>
+					</select>
+				</div>
+            </div>
+			<div class = "row">
+			  <div class="col-75">
+				<div class="container">
+					
+
+					<div class="row">
+						<div class="col-50">
+							<h3>Arve aadress</h3>
+							<label for="fname"><i class="fa fa-user"></i> Ees- ja perekonnanimi</label>
+							<input type="text" id="fname" name="firstname" placeholder="Bravuurikad Juhid">
+							<label for="email"><i class="fa fa-envelope"></i> Email</label>
+							<input type="text" id="email" name="email" placeholder="info@bjuhid.ee">
+							<label for="adr"><i class="fa fa-address-card-o"></i> Aadress</label>
+							<input type="text" id="adr" name="address" placeholder="Narva mnt 18">
+							<label for="city"><i class="fa fa-institution"></i> Linn</label>
+							<input type="text" id="city" name="city" placeholder="Tartu">
+
+							<div class="row">
+								<div class="col-50">
+									<label for="zip">Postiindeks</label>
+									<input type="text" id="zip" name="zip" placeholder="510009">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-50">
+							<h3>Makse</h3>
+							<label for="fname">Pangad</label>
+							<div class="icon-container">
+								<img src="images/swedbank.png" alt="swedbank"   width = "60" >
+								<img src="images/seb.png" alt="swedbank"  width = "60" >
+								<img src="images/lhv.png" alt="swedbank"  width = "60" >
+							</div>
+							<label for="cname">Ees- ja perekonnanimi kaardil</label>
+							<input type="text" id="cname" name="cardname" placeholder="Bravuurikad Juhid">
+							<label for="ccnum">Krediitkaardi number</label>
+							<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+							<label for="expmonth">Kehtib kuni (kuu)</label>
+							<input type="text" id="expmonth" name="expmonth" placeholder="Detsember">
+
+							<div class="row">
+								<div class="col-50">
+									<label for="expyear">Kehtib kuni (aasta)</label>
+									<input type="text" id="expyear" name="expyear" placeholder="2020">
+								</div>
+								<div class="col-50">
+									<label for="cvv">CVV</label>
+									<input type="text" id="cvv" name="cvv" placeholder="352">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<label>
+					<input type="submit" value="Maksma" class="btn">
+				
+				</div>
+			</div>
+
+			<div class="col-25">
+				<div class="container">
+					<h4>Ostukorv</h4>
+					<p><a href="sisu.html">12 kuud Bravuurikas Premium </a> <span class="hind">99.99€</span></p>
+					<hr>
+					<p>Kokku <span class="hind" ><b>99.99€</b></span></p>
+
+				</div>
+			</div>
+			
+	<div class="footer">
+        <p>Bravuurikad Juhid</p>
+        <ul>
+            <li><a href="sisu.html">Premium</a></li>
+            <li><a href="meist.html">Meist</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kkk.html">KKK</a></li>
+        </ul>
+    </div>
+</body>
+</html>
