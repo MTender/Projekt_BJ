@@ -8,10 +8,6 @@
 	height: 150px;
 }
 
-.content a{
-	color: #ff1d74;
-}
-
 /* lehe pooleks jagamine piisavalt suure ekraani puhul */
 @media only screen and (max-width:1800px){
 	.left .sub_logo{

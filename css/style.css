@@ -37,6 +37,9 @@ body{
 .content-wrap{
     padding-bottom: 80px;    
 }
+.content a{
+	color: #ff1d74;
+}
 
 /* NAVBAR */
 .navbar{
