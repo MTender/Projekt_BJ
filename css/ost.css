@@ -71,6 +71,7 @@ label{
 	margin-bottom: 10px;
 	display: block;
 }
+
 /* pangalogode kujudnus */
 .icon-container{
 	margin-bottom: 20px;
@@ -99,11 +100,3 @@ label{
 		width: 100%;
 	}
 }
-
-/* ostukorvis toote valiimine
-.custom.select{
-	position: relative;
-	border-radius: 3px;
-	width: 800px;	
-}
-*/
