@@ -1,11 +1,11 @@
 .makse, .aasta{
 	float: right;
-	display: inline-block;
+	display: block;
 	width: 45%;
 }
 .tellija, .kuu{
 	float: left;
-	display: inline-block;
+	display: block;
 	width: 45%;
 }
 .aasta, .kuu{
@@ -13,6 +13,11 @@
 }
 .nupp input{
 	width: 100%
+}
+.nupp{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
 }
 .container{
 	width: 100%;
@@ -25,25 +30,29 @@ input[type=text] {
 	border: 1px solid white;
 	border-radius: 3px;
 }
-label {
+label{
 	margin-bottom: 10px;
 	display: block;
 }
-.icon-container {
+.icon-container{
 	margin-bottom: 20px;
 	padding: 7px 0;
 	background-color: white;
 	width: auto;
 	border-radius: 3px;
-
 }
 .icon-container img{
-	height: 40px;
-	width: 60px;
+	height: 24px;
+	width: 40px;
     object-fit: contain;
 	position: relative;
 }
-.btn {
+.icon-container img:hover{
+	border: 2px solid black;
+	height: 20px;
+	width: 46px;
+}
+.btn{
 	background-color:#ff1d74;
 	color: white;
 	padding: 12px;
@@ -55,25 +64,32 @@ label {
 	cursor: pointer;
 	font-size: 17px;
 }
-.btn:hover {
+.btn:hover{
 	background-color: #6d46c7;
+	transition: 0.6s ease;
 }
 .custom.select{
 	position: relative;
 	border-radius: 3px;
 	width: 800px;	
 }
-
-input::-webkit-input-placeholder { /* WebKit browsers */
+input::-webkit-input-placeholder{ /* WebKit browsers */
 	padding: 12px;
-  }
-  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+}
+input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
 	padding: 12px;
-  }
-  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+}
+input::-moz-placeholder{ /* Mozilla Firefox 19+ */
 	padding: 12px;
-  }
-  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+}
+input:-ms-input-placeholder{ /* Internet Explorer 10+ */
 	padding: 12px;
-  }
-	
+}
+/* telefonis ühte ritta */
+@media only screen and (max-width:766px){
+	.tellija, .kuu, .makse, .aasta{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+}

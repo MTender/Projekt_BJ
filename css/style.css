@@ -47,7 +47,7 @@ body{
 	position: fixed;
 	z-index: 1000;
 }
-/* LINGID */
+/* LINGID NAVBARIL */
 .index ul{
 	list-style-type: none;
 	padding-top: 40px;
@@ -187,6 +187,9 @@ body{
     .footer ul{
         padding-top: 0px;
         padding-bottom: 30px;
+    }
+    .content-wrap{
+        padding-bottom: 160px;    
     }
 }
 
