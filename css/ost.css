@@ -1,3 +1,4 @@
+/* Jagab kaheks makse ja tellija info */
 .makse, .aasta{
 	float: right;
 	display: block;
@@ -11,6 +12,8 @@
 .aasta, .kuu{
 	margin-bottom: 20px;
 }
+
+/* nupu suurus ja esitlusviis */
 .nupp input{
 	width: 100%
 }
@@ -19,10 +22,30 @@
     width: 100%;
     height: 60px;
 }
+.btn{
+	background-color:#ff1d74;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	margin-bottom: 60px;
+	border: none;
+	width: 80%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+}
+.btn:hover{
+	background-color: #6d46c7;
+	transition: 0.6s ease;
+}
+
+/* kogu ostuvorm*/
 .container{
 	width: 100%;
 	color: white; 
 }
+
+/* inputi boxi kujundus */
 input[type=text] {
 	width: 100%;
 	margin-bottom: 20px;
@@ -30,10 +53,25 @@ input[type=text] {
 	border: 1px solid white;
 	border-radius: 3px;
 }
+input::-webkit-input-placeholder{ /* WebKit browsers */
+	padding: 12px;
+}
+input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+	padding: 12px;
+}
+input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+	padding: 12px;
+}
+input:-ms-input-placeholder{ /* Internet Explorer 10+ */
+	padding: 12px;
+}
+
+/* kasti nimetuse kujudnus */
 label{
 	margin-bottom: 10px;
 	display: block;
 }
+/* pangalogode kujudnus */
 .icon-container{
 	margin-bottom: 20px;
 	padding: 7px 0;
@@ -52,40 +90,8 @@ label{
 	height: 20px;
 	width: 46px;
 }
-.btn{
-	background-color:#ff1d74;
-	color: white;
-	padding: 12px;
-	margin: 10px 0;
-	margin-bottom: 60px;
-	border: none;
-	width: 80%;
-	border-radius: 3px;
-	cursor: pointer;
-	font-size: 17px;
-}
-.btn:hover{
-	background-color: #6d46c7;
-	transition: 0.6s ease;
-}
-.custom.select{
-	position: relative;
-	border-radius: 3px;
-	width: 800px;	
-}
-input::-webkit-input-placeholder{ /* WebKit browsers */
-	padding: 12px;
-}
-input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-	padding: 12px;
-}
-input::-moz-placeholder{ /* Mozilla Firefox 19+ */
-	padding: 12px;
-}
-input:-ms-input-placeholder{ /* Internet Explorer 10+ */
-	padding: 12px;
-}
-/* telefonis ühte ritta */
+
+/* telefonis ühte inputid üksteise alla */
 @media only screen and (max-width:766px){
 	.tellija, .kuu, .makse, .aasta{
 		float: none;
@@ -93,3 +99,11 @@ input:-ms-input-placeholder{ /* Internet Explorer 10+ */
 		width: 100%;
 	}
 }
+
+/* ostukorvis toote valiimine
+.custom.select{
+	position: relative;
+	border-radius: 3px;
+	width: 800px;	
+}
+*/
