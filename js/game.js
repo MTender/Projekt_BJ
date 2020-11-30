@@ -92,7 +92,7 @@ function liigu(x, y){ //eksamiauto liikumise funktsioon (x ja y on selle ruudu k
             window.clearInterval(cyclistMoves); //lõpeta taimeri töö
             cyclistMoves = false; //jalgrattur ei saa liikuda
             document.getElementById("a"+cyclistX+cyclistY).src = "images/crash.png"; //paneb kokkupõrkeruutu avarii pildi
-            document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile otsa. Oled eksami läbi kukkunud."; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
+            document.getElementById("gameInfo").innerHTML = "Sõitsid jalgratturile otsa. Oled eksami läbi kukkunud. Uuesti mängimiseks refreshi lehte!"; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
         }
         
         if(carX==4 && carY==4){ //kui eksamiauto jõudis alla paremasse nurka (Maanteeametisse)
@@ -100,7 +100,7 @@ function liigu(x, y){ //eksamiauto liikumise funktsioon (x ja y on selle ruudu k
             window.clearInterval(cyclistMoves); //lõpeta taimeri töö
             cyclistMoves = false; //jalgrattur ei saa liikuda
             document.getElementById("a44").src = "images/licence.png"; //paneb alla paremasse ruutu juhiloa pildi
-            document.getElementById("gameInfo").innerHTML = "Jõudsid Maanteeametisse " + minutes + " minutiga. Eksam edukalt sooritatud!"; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
+            document.getElementById("gameInfo").innerHTML = "Jõudsid Maanteeametisse " + minutes + " minutiga. Eksam edukalt sooritatud! Uuesti mängimiseks refreshi lehte!"; //muudab teksti mängu all, et anda mängijale tagasisidet juhtunu kohta
         }
     }
 }
