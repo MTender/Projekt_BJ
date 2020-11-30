@@ -1,4 +1,4 @@
-/*mid banneri asukoht*/
+/* mid banneri asukoht */
 .mid-banner img{
 	object-position: 40% 60%;
 }
@@ -8,4 +8,10 @@ table, th, td {
 	border-collapse: collapse;
 	border: 1px solid white;
 	padding: 5px;
+}
+.price{
+	text-align: right;
+}
+.old_price{
+	padding-right: 10px;
 }

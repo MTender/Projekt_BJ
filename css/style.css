@@ -17,6 +17,9 @@ body{
 	padding-bottom: 40px;
 	color: white;
 }
+.content a{
+	color: #ff1d74;
+}
 .content p{
 	font-size: 15pt;
 }
@@ -195,7 +198,7 @@ body{
     }
 }
 
-/*LOADER*/
+/* LOADER */
 .loader{
     position: fixed;
     left: 50%;
