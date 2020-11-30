@@ -1,0 +1,102 @@
+/* Jagab kaheks makse ja tellija info */
+.makse, .aasta{
+	float: right;
+	display: block;
+	width: 45%;
+}
+.tellija, .kuu{
+	float: left;
+	display: block;
+	width: 45%;
+}
+.aasta, .kuu{
+	margin-bottom: 20px;
+}
+
+/* nupu suurus ja esitlusviis */
+.nupp input{
+	width: 100%
+}
+.nupp{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+.btn{
+	background-color:#ff1d74;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	margin-bottom: 60px;
+	border: none;
+	width: 80%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+}
+.btn:hover{
+	background-color: #6d46c7;
+	transition: 0.6s ease;
+}
+
+/* kogu ostuvorm*/
+.container{
+	width: 100%;
+	color: white; 
+}
+
+/* inputi boxi kujundus */
+input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px 0px 12px 0px;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+input::-webkit-input-placeholder{ /* WebKit browsers */
+	padding: 12px;
+}
+input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+	padding: 12px;
+}
+input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+	padding: 12px;
+}
+input:-ms-input-placeholder{ /* Internet Explorer 10+ */
+	padding: 12px;
+}
+
+/* kasti nimetuse kujudnus */
+label{
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* pangalogode kujudnus */
+.icon-container{
+	margin-bottom: 20px;
+	padding: 7px 0;
+	background-color: white;
+	width: auto;
+	border-radius: 3px;
+}
+.icon-container img{
+	height: 24px;
+	width: 40px;
+    object-fit: contain;
+	position: relative;
+}
+.icon-container img:hover{
+	border: 2px solid black;
+	height: 20px;
+	width: 46px;
+}
+
+/* telefonis ühte inputid üksteise alla */
+@media only screen and (max-width:766px){
+	.tellija, .kuu, .makse, .aasta{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+}

@@ -1,13 +1,13 @@
-/*mid banneri asukoht*/
+/* mid banneri asukoht */
 .mid-banner img{
     object-position: 20% 80%;
 }
 
-/*kaart*/
+/* kaart */
 .mapouter{
     position: relative;
     text-align: right;
-    height: 300px;
+    height: 270px;
     width: 100%;
 	filter: saturate(0%);
 	transition-duration: 0.5s; 
