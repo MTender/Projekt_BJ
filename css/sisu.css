@@ -9,3 +9,7 @@ table, th, td {
 	border: 1px solid white;
 	padding: 5px;
 }
+
+.content a{
+	color: #ff1d74;
+}
